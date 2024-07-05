@@ -43,7 +43,7 @@ function updateAgeDisplay(birthDate) {
   var age = calculateAge(birthDate);
 
   document.getElementById('age').innerText = '' + age.hours + ' horas ' + age.minutes + ' minutos y ' + age.seconds + ' segundos';
-  document.getElementById('large-age').innerText = '' + age.days + ' dias ' + age.months + ' meses y ' + age.years + ' anios';
+  document.getElementById('large-age').innerText = '' + age.days + ' dias ' + age.months + ' meses y ' + age.years + ' años';
 }
 
 // Example usage:
