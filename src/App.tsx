@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 // Loader component
 const Loader = () => (
   <div className="fixed inset-0 flex items-center justify-center bg-pink-100 bg-opacity-50" style={{
-    backgroundImage: "url('https://raw.githubusercontent.com/josegomez-dev/theo/main/baby.jpeg')",
+    backgroundImage: "url('https://github.com/josegomez-dev/theo/blob/main/public/assets/theo/baby2.jpeg')",
     backgroundSize: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
@@ -62,18 +62,18 @@ export default function Component() {
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null)
 
   const babyImages = [
-    'https://raw.githubusercontent.com/josegomez-dev/theo/main/img/months/1.jpg',
-    'https://raw.githubusercontent.com/josegomez-dev/theo/main/img/months/2.jpeg',
-    'https://raw.githubusercontent.com/josegomez-dev/theo/main/img/months/3.jpg',
-    'https://raw.githubusercontent.com/josegomez-dev/theo/main/baby.jpeg',
-    'https://raw.githubusercontent.com/josegomez-dev/theo/main/baby.jpeg',
-    'https://raw.githubusercontent.com/josegomez-dev/theo/main/baby.jpeg',
-    'https://raw.githubusercontent.com/josegomez-dev/theo/main/baby.jpeg',
-    'https://raw.githubusercontent.com/josegomez-dev/theo/main/baby.jpeg',
-    'https://raw.githubusercontent.com/josegomez-dev/theo/main/baby.jpeg',
-    'https://raw.githubusercontent.com/josegomez-dev/theo/main/baby.jpeg',
-    'https://raw.githubusercontent.com/josegomez-dev/theo/main/baby.jpeg',
-    'https://raw.githubusercontent.com/josegomez-dev/theo/main/baby.jpeg',
+    'https://github.com/josegomez-dev/theo/blob/main/public/assets/theo/months/1.jpg',
+    'https://github.com/josegomez-dev/theo/blob/main/public/assets/theo/months/2.jpeg',
+    'https://github.com/josegomez-dev/theo/blob/main/public/assets/theo/months/3.jpg',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
   ]
 
   const babySounds = [
