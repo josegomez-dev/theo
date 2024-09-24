@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theo | Familia Chavez Obando</title>
+    <!-- UIKit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.19/dist/css/uikit.min.css" />
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        body {
+          background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(44,59,153,0.6026785714285714) 47%, rgba(0,86,255,0.2665441176470589) 100%);
+        }
+
+        body h3, body  h1, body .uk-overlay p, body .uk-navbar-container a {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        body #ageDisplay {
+          font-family: 'Dancing Script', cursive;
+          font-size: 22px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="uk-navbar-container " uk-navbar>
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-item uk-logo uk-position-right" href="#"> 🍼 <strong>Familia Chaves Obando</strong> 🐣 &nbsp;&nbsp;&nbsp;</a>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="uk-section uk-padding-large uk-text-center">
+        <h1>
+          <a style="color: white;" href="" class="typewrite" data-period="2000" data-type='[ "Hola, Soy Theo." ]'>
+            <span class="wrap"></span>
+          </a>
+        </h1>
+
+        <div id="ageDisplay">
+          <p id="large-age">Years: </p>
+
+          <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: scale; parallax: true; parallax-start: 100%; parallax-end: 100%;">
+
+              <div class="uk-slideshow-items">
+                    <div>
+                        <img src="./losdos.jpeg" alt="" uk-cover>
+                    </div>
+
+                    <div>
+                        <img src="./baby.jpeg" alt="" uk-cover>
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                            <p class="uk-margin-remove">5 dia de conocer al mundo.</p>
+                        </div>
+                    </div>
+                  <!-- <div>
+                      <img src="./baby.jpeg" alt="" uk-cover>
+                      <div class="uk-overlay uk-overlay-primary uk-position-right uk-text-center uk-transition-slide-right uk-width-medium">
+                          <h3 class="uk-margin-remove">Left</h3>
+                          <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                  </div> -->
+              </div>
+
+              <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+              <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+
+          </div>
+
+          <p id="age">Years: </p>
+        </div>
+
+        <i uk-toggle="target: #off-canvas-music-layer" class="fa-solid fa-music fa-2x"></i>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i uk-toggle="target: #off-canvas-gallery-layer" class="fa-solid fa-photo-film fa-2x"></i>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i uk-toggle="target: #off-canvas-books-layer" class="fa-solid fa-book fa-2x"></i>
+    </div>
+
+    <!-- Features Section -->
+    <div id="features" class="uk-section uk-section-muted">
+        <div class="uk-container">
+            <!-- <h2 class="uk-heading-medium uk-text-center">Features</h2> -->
+
+            <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+                <!-- Feature Item -->
+                <div uk-toggle="target: #off-canvas-baby-develop-layer">
+                  <div class="uk-card uk-card-default uk-card-body">
+                      <h3 class="uk-card-title">Guia general para el desarrollo de habilidades del bebe</h3>
+                      <p>Bienvenido a un recorrido por la aventura de mi nacimiento.</p>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- This is the off-canvas -->
+    <div id="off-canvas-gallery-layer" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+
+            <h4>Galeria de Fotos.</h4>
+            <p>Bienvenido a un recorrido por la aventura de mi nacimiento.</p>
+
+            <div>
+                <img src="./baby2.jpeg" alt="">
+            </div>
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        </div>
+    </div>
+
+    <!-- This is the off-canvas -->
+    <div id="off-canvas-books-layer" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+
+            <h4>Cuentos Infantiles.</h4>
+
+            <div class="uk-child-width-1-2@s uk-text-center" uk-grid>
+                <div class="audio-container" id="story1-container">
+                    <div style="background-color: lightyellow; color: black" class="uk-box-shadow-small uk-padding">El cuento de Caperucita Roja</div>
+                    <audio id="story1" src="./cuentos/El cuento de Caperucita Roja - Videos infantiles - Cuentos clásicos para niños.mp3" preload="auto"></audio>
+                    <div class="controls">
+                        <button onclick="playAudio('story1')">Play</button>
+                        <button onclick="pauseAudio('story1')">Pause</button>
+                        <button onclick="stopAudio('story1')">Stop</button>
+                    </div>
+                </div>
+
+                <div class="audio-container" id="story2-container">
+                    <div style="background-color: lightcyan; color: black" class="uk-box-shadow-medium uk-padding">El cuento de Pulgarcito y sus hermanos</div>
+                    <audio id="story2" src="./cuentos/El cuento de Pulgarcito y sus hermanos - Videos infantiles - Cuentos clásicos para niños.mp3" preload="auto"></audio>
+                    <div class="controls">
+                        <button onclick="playAudio('story2')">Play</button>
+                        <button onclick="pauseAudio('story2')">Pause</button>
+                        <button onclick="stopAudio('story2')">Stop</button>
+                    </div>
+                </div>
+
+                <div class="audio-container" id="story3-container">
+                    <div style="background-color: lightskyblue; color: black" class="uk-box-shadow-medium uk-padding">El cuento  de El soldadito de plomo</div>
+                    <audio id="story3" src="./cuentos/El cuento  de El soldadito de plomo - Videos infantiles - Cuentos clásicos para niños.mp3" preload="auto"></audio>
+                    <div class="controls">
+                        <button onclick="playAudio('story3')">Play</button>
+                        <button onclick="pauseAudio('story3')">Pause</button>
+                        <button onclick="stopAudio('story3')">Stop</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        </div>
+    </div>
+
+    <!-- This is the off-canvas -->
+    <div id="off-canvas-music-layer" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+
+            <h4>Musica para Theo.</h4>
+
+            <div class="uk-child-width-1-2@s uk-text-center" uk-grid>
+                <div class="audio-container" id="audio1-container">
+                    <div style="background-color: lightyellow; color: black" class="uk-box-shadow-small uk-padding">Música Clásica</div>
+                    <audio id="audio1" src="./audios/nocturne.mp3" preload="auto"></audio>
+                    <div class="controls">
+                        <button onclick="playAudio('audio1')">Play</button>
+                        <button onclick="pauseAudio('audio1')">Pause</button>
+                        <button onclick="stopAudio('audio1')">Stop</button>
+                    </div>
+                </div>
+
+                <div class="audio-container" id="audio2-container">
+                    <div style="background-color: lightcyan; color: black" class="uk-box-shadow-medium uk-padding">Música de Relajación y Meditación</div>
+                    <audio id="audio2" src="./audios/relax.mp3" preload="auto"></audio>
+                    <div class="controls">
+                        <button onclick="playAudio('audio2')">Play</button>
+                        <button onclick="pauseAudio('audio2')">Pause</button>
+                        <button onclick="stopAudio('audio2')">Stop</button>
+                    </div>
+                </div>
+
+                <div class="audio-container" id="audio3-container">
+                    <div style="background-color: lightskyblue; color: black" class="uk-box-shadow-large uk-padding">Canciones de Cuna y Música Infantil</div>
+                    <audio id="audio3" src="./audios/enmicorazonestaras.mp3" preload="auto"></audio>
+                    <div class="controls">
+                        <button onclick="playAudio('audio3')">Play</button>
+                        <button onclick="pauseAudio('audio3')">Pause</button>
+                        <button onclick="stopAudio('audio3')">Stop</button>
+                    </div>
+                </div>
+
+                <div class="audio-container" id="audio4-container">
+                    <div style="background-color: lightsalmon; color: black" class="uk-box-shadow-xlarge uk-padding">Música del Mundo y Étnica</div>
+                    <audio id="audio4" src="./audios/pasion.mp3" preload="auto"></audio>
+                    <div class="controls">
+                        <button onclick="playAudio('audio4')">Play</button>
+                        <button onclick="pauseAudio('audio4')">Pause</button>
+                        <button onclick="stopAudio('audio4')">Stop</button>
+                    </div>
+                </div>
+
+                <div class="audio-container" id="audio5-container">
+                    <div style="background-color: lightpink; color: black" class="uk-box-shadow-xlarge uk-padding">Babbies Go</div>
+                    <audio id="audio5" src="./audios/babbiesgo.mp3" preload="auto"></audio>
+                    <div class="controls">
+                        <button onclick="playAudio('audio5')">Play</button>
+                        <button onclick="pauseAudio('audio5')">Pause</button>
+                        <button onclick="stopAudio('audio5')">Stop</button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        </div>
+    </div>
+
+    <!-- This is the off-canvas -->
+    <div id="off-canvas-baby-develop-layer" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+
+            <h4>Guía general de habilidades para el desarrollo del bebe.</h4>
+            <h5>1 Mes</h5>
+            <ul>
+              <li>Aprender a enfocar la mirada en objetos cercanos.</li>
+              <li>Mejorar los reflejos de succión y búsqueda del pecho materno.</li>
+              <li>Reaccionar a sonidos fuertes con sobresaltos.</li>
+            </ul>
+            <h5>3 Meses</h5>
+            <ul>
+              <li>Sostener la cabeza erguida cuando están boca abajo.</li>
+              <li>Sonreír y reír en respuesta a estímulos.</li>
+              <li>Agarrar y sostener objetos simples.</li>
+            </ul>
+
+            <h5>6 Meses</h5>
+            <ul>
+              <li>Sentarse sin apoyo.</li>
+              <li>Comenzar a gatear o deslizarse.</li>
+              <li>Iniciar la exploración de texturas y objetos con la boca.</li>
+            </ul>
+
+            <h5>9 Meses</h5>
+            <ul>
+              <li>Ponerse de pie con apoyo o contra muebles.</li>
+              <li>Desarrollar la habilidad de pinza para agarrar objetos pequeños.</li>
+              <li>Entender y responder a órdenes simples, como "adiós" o "ven aquí".</li>
+            </ul>
+
+            <h5>12 Meses</h5>
+            <ul>
+              <li>Dar los primeros pasos independientes.</li>
+              <li>Pronunciar algunas palabras simples.</li>
+              <li>Mostrar preferencias claras por ciertos juguetes o actividades.</li>
+            </ul>
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="uk-section uk-text-center">
+        <p> ♥️ Manos pequeñas, gran futuro. <br/> <b>¡Felicidades por el nacimiento!. ♥️ </b></p>
+    </footer>
+
+    <!-- UIKit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.19/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.19/dist/js/uikit-icons.min.js"></script>
+    <script src="./typewritter-effect.js"></script>
+    <script src="newbornAgeCalculator.js"></script>
+    <script>
+        function playAudio(id) {
+        var audio = document.getElementById(id);
+        audio.play();
+        }
+
+        function pauseAudio(id) {
+        var audio = document.getElementById(id);
+        audio.pause();
+        }
+
+        function stopAudio(id) {
+        var audio = document.getElementById(id);
+        audio.pause();
+        audio.currentTime = 0; // Reset audio to the beginning
+        }
+    </script>
+</body>
+</html>
