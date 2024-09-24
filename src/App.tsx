@@ -62,9 +62,9 @@ export default function Component() {
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null)
 
   const babyImages = [
-    'https://github.com/josegomez-dev/theo/blob/main/src/assets/theo/months/1.jpg',
-    'https://github.com/josegomez-dev/theo/blob/main/src/assets/theo/months/1.jpg',
-    'https://github.com/josegomez-dev/theo/blob/main/src/assets/theo/months/1.jpg',
+    'https://blog.jenniferwillardphotography.ca/wp-content/uploads/2018/09/bbay-girl-blue-blanket-pants-flower-headband-Kingston-newborn-photographer.jpg',
+    'https://blog.jenniferwillardphotography.ca/wp-content/uploads/2018/09/bbay-girl-blue-blanket-pants-flower-headband-Kingston-newborn-photographer.jpg',
+    'https://blog.jenniferwillardphotography.ca/wp-content/uploads/2018/09/bbay-girl-blue-blanket-pants-flower-headband-Kingston-newborn-photographer.jpg',
     'https://github.com/josegomez-dev/theo/blob/main/src/assets/theo/months/1.jpg',
     'https://github.com/josegomez-dev/theo/blob/main/src/assets/theo/months/1.jpg',
     'https://github.com/josegomez-dev/theo/blob/main/src/assets/theo/months/1.jpg',
