@@ -62,18 +62,18 @@ export default function Component() {
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null)
 
   const babyImages = [
-    'https://github.com/josegomez-dev/theo/blob/main/public/assets/theo/months/1.jpg',
-    'https://github.com/josegomez-dev/theo/blob/main/public/assets/theo/months/2.jpeg',
-    'https://github.com/josegomez-dev/theo/blob/main/public/assets/theo/months/3.jpg',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
+    'https://github.com/josegomez-dev/theo/blob/main/src/assets/theo/months/1.jpg',
+    'https://github.com/josegomez-dev/theo/blob/main/src/assets/theo/months/1.jpg',
+    'https://github.com/josegomez-dev/theo/blob/main/src/assets/theo/months/1.jpg',
+    'https://github.com/josegomez-dev/theo/blob/main/src/assets/theo/months/1.jpg',
+    'https://github.com/josegomez-dev/theo/blob/main/src/assets/theo/months/1.jpg',
+    'https://github.com/josegomez-dev/theo/blob/main/src/assets/theo/months/1.jpg',
+    'https://github.com/josegomez-dev/theo/blob/main/src/assets/theo/months/1.jpg',
+    'https://github.com/josegomez-dev/theo/blob/main/src/assets/theo/months/1.jpg',
+    'https://github.com/josegomez-dev/theo/blob/main/src/assets/theo/months/1.jpg',
+    'https://github.com/josegomez-dev/theo/blob/main/src/assets/theo/months/1.jpg',
+    'https://github.com/josegomez-dev/theo/blob/main/src/assets/theo/months/1.jpg',
+    'https://github.com/josegomez-dev/theo/blob/main/src/assets/theo/months/1.jpg',
   ]
 
   const babySounds = [
