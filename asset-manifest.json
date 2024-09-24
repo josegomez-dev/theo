@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/theo/static/css/main.0e13fc31.css",
+    "main.js": "/theo/static/js/main.8e8daabe.js",
+    "static/js/453.84110068.chunk.js": "/theo/static/js/453.84110068.chunk.js",
+    "index.html": "/theo/index.html",
+    "main.0e13fc31.css.map": "/theo/static/css/main.0e13fc31.css.map",
+    "main.8e8daabe.js.map": "/theo/static/js/main.8e8daabe.js.map",
+    "453.84110068.chunk.js.map": "/theo/static/js/453.84110068.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e13fc31.css",
+    "static/js/main.8e8daabe.js"
+  ]
+}
